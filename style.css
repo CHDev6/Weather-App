@@ -1,0 +1,160 @@
+/* font family for all text and then also no user select on any text in the UI 
+except anything input to make the application seem nicer */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set default font for all elements */
+    user-select: none; 
+}
+
+/* Class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Title style positioning and font size */
+.title_main {
+    position: absolute;
+    left: 625px; 
+    top: 90px; 
+    font-size: 45px; 
+}
+
+/* Body styling, linear gradient background and centering of content in the page */
+body {
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(to bottom, rgba(47, 134, 255, 1), rgba(255, 196, 0, 1)); 
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+/* Container styling with background, padding, and box-shadow */
+.container {
+    text-align: center; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 14px; 
+    border-radius: 10px; 
+    max-width: 1200px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Global styling for input fields and buttons */
+input, button {
+    padding: 10px; 
+    margin: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+/* Button styling for get weather manually button */
+#get-weather-btn {
+    background-color: #007BFF; 
+    color: white;
+    border: none; 
+    cursor: pointer;
+}#get-weather-btn:hover {
+    background-color: #004084; 
+}
+
+/* Styling for h3 */
+h3 {
+    margin-top: 20px; 
+}
+
+/* Layout for tables with flexbox */
+.tables-wrapper {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+/* Container for each table */
+.table-container {
+    width: 45%; 
+    margin: 10px;
+    text-align: center; 
+}
+
+/* Specific table styling */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+/* Table border styling */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Table cell padding and text alignment */
+th, td {
+    padding: 8px; 
+    text-align: center; 
+}
+
+/* Header row styling */
+th {
+    background-color: #f4f4f4; 
+}
+
+/* Styling for weather condition descriptions */
+.weather-description {
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+}
+
+/* Weather condition specific styles */
+.sunny {
+    color: rgb(255, 123, 0); 
+    font-weight: bold; 
+}.cloudy {
+    color: rgb(93, 93, 93); 
+    font-weight: bold; 
+}.rainy {
+    color: darkblue; 
+    font-weight: bold; 
+}
+
+/* Styling for the auto-weather button */
+#auto-weather-btn {
+    padding: 15px 30px; 
+    margin: 20px; 
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none; 
+    cursor: pointer; 
+    font-size: 1.2em; 
+}#auto-weather-btn:hover {
+    background-color: #006416;
+}
+
+/* City name styling */
+.city-name {
+    margin: 0px; 
+}
+
+/* Styling for the home button */
+#home-btn {
+    padding: 10px 20px; 
+    margin: 20px; 
+    border-radius: 5px; 
+    background-color: #dc3545; 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+    font-size: 1.2em; 
+}#home-btn:hover {
+    background-color: #80010d; 
+}
+
+/* Styling for the city name display */
+#city-name {
+    padding: 0px; 
+    margin-top: 10px; 
+    margin-bottom: -6px; 
+    font-size: 40px; 
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main title -->
+    <h1 class="title_main">Weather App</h1>
+
+    <!-- Whole UI -->
+    <div class="container">
+
+        <!-- Start UI where you retrieve weather -->
+        <div id="main-ui">
+                <h1>Retrieve Manually</h1>
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="get-weather-btn"><b>Get Weather</b></button>
+                
+                <h1>Retrieve Automatically</h1>
+                <button id="auto-weather-btn"><b>Weather in my City</b></button>    
+            </div>
+        
+        <!-- Starts hidden, this section contains everything that displays weather of the given city -->
+        <div id="weather-info" class="hidden">
+            <h1 id="city-name"></h1>
+            <div class="tables-wrapper">
+                <div class="table-container">
+                    <h3>Weather <b><u>Today</u></b></h3>
+                    <p id="weather-description-today-table" class="weather-description"></p>
+                    <table id="hourly-table-today">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Temperature (°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hourly-table-body-today">
+                            <!-- Todays temp in 3 hour intervals added to here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <h3>Weather <b><u>Tomorrow</u></b></h3>
+                    <p id="weather-description-tomorrow-table" class="weather-description"></p>
+                    <table id="hourly-table-tomorrow">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Temperature (°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hourly-table-body-tomorrow">
+                            <!-- Tommorows temp in 3 hour intervals added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Home button for navigating back to start up page -->
+            <button id="home-btn" class="hidden"><b>Home</b></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
